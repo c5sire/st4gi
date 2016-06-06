@@ -81,7 +81,7 @@ gg_tai <- function(trait, geno, env, rep, data, maxp = 0.1, conf = 0.95, title =
   data[, rep] <- factor(data[, rep])
   
   # Check data
-  print(head(data))
+  #print(head(data))
   
   lc <- checkdata02(trait, geno, env, rep, data)
   

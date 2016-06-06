@@ -16,6 +16,7 @@
 #' @param color Color for lines, symbols and/or labels for environments, genotypes and axes.
 #' @param size Relative size for symbols and labels.
 #' @author Raul Eyzaguirre
+#' @importFrom stats aov anova coef cor deviance dnorm lm pf qf qnorm qt sd summary.lm
 #' @details Significance of PCs are evaluated only with \code{method = "AMMI"} and if
 #' the data are balanced.
 #' @return It returns the genotype, environment and interaction means, the interaction
@@ -54,7 +55,7 @@ ammi <- function(trait, geno, env, rep, data, method = "AMMI", f = 0.5,
 
   # Check data
 
-  lc <- checkdata02(trait, geno, env, data)
+  lc <- checkdata02(trait, geno, env, rep, data)
 
   # Error messages
 

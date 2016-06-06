@@ -19,6 +19,7 @@
 #' @param x.las x axes labels orientation.
 #' @param jf Jitter factor for dots.
 #' @param dist Horizontal distance between the means and the dots.
+#' @importFrom graphics axis abline lines plot points text
 #' @author Raul Eyzaguirre
 #' @details An alternative to the controversial dynamite plots.
 #' If \code{conf} is set to a value greater than or equal to 1, then it is interpreted

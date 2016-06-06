@@ -13,7 +13,7 @@ Imports:
     lme4,
     shiny,
     ggplot2,
-    ggrepel
+    ggrepel, graphics, stats, utils
 License: MIT + file LICENSE
 Copyright: International Potato Center (2015)
 LazyData: true
